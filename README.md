@@ -40,20 +40,20 @@ promoter-gen generate --count 20 --strength strong --output outputs/strong.fasta
 Провести локальную проверку без ClearML:
 
 ```powershell
-python scripts/run_experiment.py --no-clearml
+python scripts/run.py --no-clearml
 ```
 
 Записать эксперимент локально в формате ClearML Offline Session:
 
 ```powershell
-python scripts/run_experiment.py --offline
+python scripts/run.py --offline
 ```
 
 Запустить онлайн после настройки ClearML:
 
 ```powershell
 clearml-init
-python scripts/run_experiment.py
+python scripts/run.py
 ```
 
 Параметры эксперимента:
